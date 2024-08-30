@@ -1,17 +1,23 @@
-<div id="<%= dom_id tweet %>">
-  <p>
-    <strong>Body:</strong>
-    <%= tweet.body %>
-  </p>
+<div id="<%= dom_id tweet %>" class="flex flex-col">
+  <div class="flex flex-col p-2 border-2 border-slate-400 rounded-md">
+    <div class="mb-3">
+      <p class="text-2xl">
+        <%= tweet.body %>
+      </p>
+    </div>
 
-  <p>
-    <strong>Likes:</strong>
-    <%= tweet.likes %>
-  </p>
+    <div class="flex space-x-2">
+      <p>
+        likes (<%= tweet.likes %>)
+      </p>
 
-  <p>
-    <strong>Retweets:</strong>
-    <%= tweet.retweets %>
-  </p>
+      <p>
+        retweets (<%= tweet.retweets %>)
+      </p>
+    </div>
+  </div>
 
+  <p class="text-sm text-slate-600">
+    <%= link_to "Show this tweet", tweet %>
+  </p>
 </div>
