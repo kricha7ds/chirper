@@ -5,20 +5,27 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+- Run the app locally
+  Start the server with `rails s`
 
-* System dependencies
+  Start all processes `.bin/dev`
 
-* Configuration
+  Start the rails console with `rails c`
 
-* Database creation
+- Ruby version
 
-* Database initialization
+- System dependencies
 
-* How to run the test suite
+- Configuration
 
-* Services (job queues, cache servers, search engines, etc.)
+- Database creation
 
-* Deployment instructions
+- Database initialization
 
-* ...
+- How to run the test suite
+
+- Services (job queues, cache servers, search engines, etc.)
+
+- Deployment instructions
+
+- ...
