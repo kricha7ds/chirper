@@ -6,9 +6,9 @@ application up and running.
 Things you may want to cover:
 
 - Run the app locally
-  Start the server with `rails s`
 
-  Start all processes `.bin/dev`
+  - Start the app with `./bin/dev` which will build all processes
+  - Head to http://127.0.0.1:3000/tweets
 
   Start the rails console with `rails c`
 
