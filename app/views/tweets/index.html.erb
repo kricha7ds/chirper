@@ -4,10 +4,14 @@
 
 <h1>Chirper</h1>
 
-<%= link_to "New tweet", new_tweet_path %>
-
-<div id="tweets" class="flex flex-col space-y-4">
+<div id="tweets" class="flex flex-col space-y-4 my-10">
   <% @tweets.each do |tweet| %>
     <%= render tweet %>
   <% end %>
+</div>
+
+<div class="flex w-full mt-4 justify-end">
+  <button class="flex py-1 px-2 rounded-md bg-blue-100 hover:bg-blue-200 hover:ease-in-out duration-150 ring-2 ring-blue-500 ring-offset-1">
+    <%= link_to "New tweet", new_tweet_path %>
+  </button>
 </div>
